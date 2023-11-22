@@ -5,7 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-  background: #000000;
+  background: gainsboro;
 }
 .app{
   width: 50rem;
@@ -35,10 +35,14 @@ body{
   font-size: 20px;
   border: none;
 }
-button:hover{
+.btn:hover:not([disabled]){
   background: #000000;
   color: #fff;
   cursor: pointer;
+}
+.btn:disabled{
+  cursor:no-drop;
+  color: #000000;
 }
 #next-btn{
   padding: 15px 40px;
@@ -50,15 +54,20 @@ button:hover{
   color: #fff;
   border: none;
   border-bottom: 6px solid gold;
+  margin: 20px auto 0;
   display: none;
+  display: block;
 }
 #next-btn:hover{
   background: gold;
   color: green;
+  cursor: pointer;
 }
 .correct{
   background: greenyellow;
+  color: #000000;
 }
 .incorrect{
   background: red;
+  color: #000000;
 }
