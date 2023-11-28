@@ -4,9 +4,60 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-body{
-  background: linear-gradient(135deg, #efefef, #feeefe);
-}
-.containter{
+
+.container{
   width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 10px;
+}
+.calculator{
+  width: 100%;
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.calculator h1{
+  font-size: 54px;
+  color: yellow;
+}
+.input-box{
+  padding: 35px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  align-items: center;
+  display: flex;
+}
+.input-box input{
+  flex: 1;
+  padding: 14px 20px;
+  background: #fff;
+  margin-right: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  position: relative;
+}
+.input-box button{
+  background: #ffff9c;
+  border: 0;
+  padding: 20px 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  background-position: calc(100% - 10px);
+  position: absolute;
+  background-size: 30px;
+  cursor: pointer;
 }
