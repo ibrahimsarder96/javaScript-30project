@@ -44,7 +44,7 @@
 .input-box button{
   background: #ffff9c;
   border: 0;
-  padding: 20px 30px;
+  padding: 14px 20px;
   font-weight: 600;
   border-radius: 10px;
   font-size: 22px;
@@ -56,8 +56,16 @@
   right: 0;
   bottom: 0;
   width: auto;
+  height: auto;
   background-position: calc(100% - 10px);
   position: absolute;
   background-size: 30px;
   cursor: pointer;
+}
+#age{
+  font-size: 20px;
+  font-weight: 700;
+}
+#age>span{
+  color: #ffff9c;
 }
